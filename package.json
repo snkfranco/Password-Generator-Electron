@@ -1,0 +1,30 @@
+{
+  "name": "HAVOC",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^32.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.suaempresa.suaaplicacao",
+    "productName": "Password Generator",
+    "files": [
+      "index.js",
+      "index.html",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
